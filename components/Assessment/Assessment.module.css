@@ -1,0 +1,10 @@
+.align{
+    display: flex;
+}
+.mainContainer{
+   width: 95%;
+   margin: auto;
+   border-radius: 12px;
+border: 1px solid var(--system-stroke-2, #DADCE0);
+background: var(--text-white, #FFF);
+}

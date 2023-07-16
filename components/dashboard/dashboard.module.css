@@ -1,0 +1,38 @@
+.font:disabled{
+    color: var(--text-100, #1C4980);
+font-family: Inter;
+font-size: 60px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; 
+}
+.main >li>button:disabled {
+    color: var(--bs-nav-link-disabled-color);
+    background-color: transparent;
+    font-size: 20px;
+    border-color: transparent;
+    color: var(--text-100, #1C4980);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; 
+
+}
+.main>li>.hide{
+    display: none;
+}
+.main .nav-item .nav-link{
+    border: none;
+    font-size: 60px;
+}
+.main >li>button.active {
+  border-color: none;
+}
+#removebackground{
+    border-color: none;
+}
+.main >li>button[].active{
+    border: 0px;
+
+}
