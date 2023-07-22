@@ -1,0 +1,48 @@
+.padding{
+  
+}
+.width{
+    width: auto;
+    --bs-offcanvas-width: auto;
+    position: static;
+    background-color: red;
+}
+.dashboard{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    
+}
+.backdrop{
+    opacity: 0;
+}
+.dash{
+    margin-left: auto;
+    margin-right: auto;
+    color: #1C4980;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 16.8px */
+    padding-top: 6px;
+}
+.div1{
+    padding: 10px 20px;
+}
+.Admin{
+    border-radius: 22px;
+border: 1px solid var(--accent-new-red, #D63500);
+background: var(--accent-red-light, #FBEBEA);
+text-align: center;
+margin-top: 16px;
+margin-bottom: 16px;
+
+}
+.div2{
+    border-top: 1px solid var(--system-stroke, #BACBD5);;
+}
+.dashboard1{
+    margin-bottom: 30px;
+}

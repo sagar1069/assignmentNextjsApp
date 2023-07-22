@@ -1,38 +1,100 @@
-.font:disabled{
-    color: var(--text-100, #1C4980);
-font-family: Inter;
-font-size: 60px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; 
-}
-.main >li>button:disabled {
-    color: var(--bs-nav-link-disabled-color);
-    background-color: transparent;
-    font-size: 20px;
-    border-color: transparent;
-    color: var(--text-100, #1C4980);
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 140%; 
 
+@media(max-width:700px){
+    .canvaWidth{
+
+    
+display: none;
+    }
+    .div1{
+        display: flex;
+    }
+    .assesses{
+        color: var(--text-100, #1C4980);
+        padding: 20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; 
+        padding-left: 0px;
+        padding-top: 25px;
+        /* 22.4px */
+    }
+    .img{
+        padding: 15px;
+    }
+    .offcanvaImg{
+        border-radius: 60px;
+background: var(--secondary-5, #F2F8FE);
+padding: 10px;
+    }
+    
 }
-.main>li>.hide{
-    display: none;
-}
-.main .nav-item .nav-link{
-    border: none;
+
+@media(min-width:700px){
+    .div1{
+        display: none;
+    }
+    .font:disabled{
+        color: var(--text-100, #1C4980);
     font-size: 60px;
-}
-.main >li>button.active {
-  border-color: none;
-}
-#removebackground{
-    border-color: none;
-}
-.main >li>button[].active{
-    border: 0px;
-
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    }
+    .main >li>button:disabled {
+        color: var(--bs-nav-link-disabled-color);
+        background-color: transparent;
+        font-size: 20px;
+        border-color: transparent;
+        color: var(--text-100, #1C4980);
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    
+    }
+    .Assessment{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .tabs {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        
+        align-items: center;
+        margin: 20px;
+      }
+    
+    .main>li>.hide{
+        display: none;
+    }
+    .canvaAlignment{
+        display: flex;
+    
+    }
+    .imgWidth{
+        width: auto;
+        float: left;
+        padding: 20px;
+        padding-top: 35px;
+        padding-left: 35px;
+    }
+    .main .nav-item .nav-link{
+        border: none;
+        font-size: 60px;
+    }
+    .main >li>button.active {
+      border-color: none;
+    }
+    #removebackground{
+        border-color: none;
+    }
+    .canvaWidth{
+        width: 200px;
+    }
+    
 }
