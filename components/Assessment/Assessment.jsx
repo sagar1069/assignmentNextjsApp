@@ -21,6 +21,15 @@ function Assessment() {
             <div className={styles.value}>34</div>
           </div>
         </div>
+        <div className={styles.div111}>
+          <div className={styles.totalPurpose}>Total Purpose</div>
+          <div className={styles.div12}>
+            <div>
+              <img src="TotalPurpose.png" alt="" />
+            </div>
+            <div className={styles.price4}>11</div>
+          </div>
+        </div>
         <div className={styles.div2}>
           <div className={styles.candidates}>Candidates</div>
           <div className={styles.div3}>
@@ -104,11 +113,27 @@ function Assessment() {
             <div className={styles.bags}>
             <img src="/bag.svg" alt="bag"/>
             </div>
+            <div className={styles.width5}>
+            <div className={styles.mathAssesment}>
+         {e.assignment}
+          </div>
+          <div className={styles.div15}>
+            <div className={styles.job}>
+            {e.types}
+            </div>
+            <div className={styles.calendar}>
+              <img src="calendar_today.svg" alt="calendar_today"/>
+            </div>
+            <div className={styles.date}>
+            {e.date}
+            </div>
+          </div>
+          </div>
             <div className={styles.dot}>
             <img className={styles.dots} src="/3 dot.svg" alt="3 dot"/>
             </div>
           </div>
-
+          <div className={styles.view}>
           <div className={styles.mathAssesment}>
          {e.assignment}
           </div>
@@ -122,6 +147,7 @@ function Assessment() {
             <div className={styles.date}>
             {e.date}
             </div>
+          </div>
           </div>
           <div className={styles.div16}>
             <div className={styles.duration}>
@@ -152,8 +178,8 @@ function Assessment() {
           <div className={styles.width2}>
             
             {e.particaipants.map((y)=>(
-              <div className={styles.lp}>
-                {y}
+              <div  style={{backgroundColor:(y.color),position:'absolute',left:(y.position),color:'white',borderRadius:'32px',padding:'4px',height:'30px',width:'30px',textAlign:'center'}}>
+                {y.name}
               </div>
             ))}
            

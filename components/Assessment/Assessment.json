@@ -5,8 +5,15 @@
         "date":"20 Apr 2023",
         "duration":"00",
         "questions":"00",
-        "particaipants":["LP"
-        ]    
+        "particaipants":[
+            {
+                "id":1,
+                "name":"LP",
+                "color":"#E9407A",
+                "position":"10px"
+            }
+            
+        ] 
     },
     {
         "assignment":"Science Assessment",
@@ -14,7 +21,26 @@
         "date":"20 Apr 2023",
         "duration":"00",
         "questions":"00",
-        "particaipants":["LP","L","LC"
+        "particaipants":[
+            {
+                "id":1,
+                "name":"LP",
+                "color":"#E9407A",
+                "position":"0px"
+            },
+            {
+                "id":2,
+                "name":"L",
+                "color":"#3079E1",
+                "position":"15px"
+            },
+            {
+                "id":3,
+                "name":"LC",
+                "color":"#6548EE",
+                "position":"30px"
+            }
+            
         ]    
     }
 ]

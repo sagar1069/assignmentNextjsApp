@@ -8,6 +8,17 @@ display: none;
     .div1{
         display: flex;
     }
+    .tabs {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        
+        align-items: center;
+        width: 100%;
+        text-align: center;
+      }
+   
     .assesses{
         color: var(--text-100, #1C4980);
         padding: 20px;
@@ -31,6 +42,9 @@ padding: 10px;
 }
 
 @media(min-width:700px){
+    .hide{
+        display: none;
+    }
     .div1{
         display: none;
     }
@@ -59,6 +73,9 @@ padding: 10px;
         flex-direction: row;
     
     }
+    .div2{
+        width: 100%;
+    }
     .tabs {
         font-style: normal;
         font-weight: 700;
@@ -67,6 +84,7 @@ padding: 10px;
         
         align-items: center;
         margin: 20px;
+        text-align: center;
       }
     
     .main>li>.hide{
@@ -90,11 +108,14 @@ padding: 10px;
     .main >li>button.active {
       border-color: none;
     }
-    #removebackground{
-        border-color: none;
+    .tabs >ul>li{
+        display: none;
     }
     .canvaWidth{
         width: 200px;
+    }
+    .titles{
+        display: flex;
     }
     
 }

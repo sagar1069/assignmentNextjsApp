@@ -1,5 +1,7 @@
 .padding{
-  
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .width{
     width: auto;
@@ -15,12 +17,18 @@
     width: 20px;
     
 }
+.div1:active{
+    border-radius: 8px;
+    border: 1px solid var(--secondary-1, #0073E6);
+    background: #E5F1FC;
+}
 .backdrop{
     opacity: 0;
 }
 .dash{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     color: #1C4980;
     font-size: 12px;
     font-style: normal;
@@ -38,10 +46,13 @@ background: var(--accent-red-light, #FBEBEA);
 text-align: center;
 margin-top: 16px;
 margin-bottom: 16px;
+margin-left: 20px;
+    margin-right: 20px;
 
 }
 .div2{
-    border-top: 1px solid var(--system-stroke, #BACBD5);;
+    border-top: 1px dotted var(--system-stroke, #BACBD5);
+    margin-top: 40px;
 }
 .dashboard1{
     margin-bottom: 30px;

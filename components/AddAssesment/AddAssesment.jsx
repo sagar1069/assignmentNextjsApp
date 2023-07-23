@@ -5,13 +5,13 @@ function AddAssesment(props) {
   const [skillSet,setSkillset] = useState(["UI/UX and Design", "No of Question", "Web Development", "UI/UX and Design ", "Web Development"]);
 
   const filteredOptions = [
-    { id: 1, name: "Speakers/ Basstubes" },
-    { id: 2, name: "Vacuum Cleaners" },
-    { id: 3, name: "Jack & wrench" },
-    { id: 4, name: "Car Cover " },
-    { id: 5, name: "Audio/Video Players" },
-    { id: 6, name: "Lightings" },
-    { id: 7, name: "Tyre Inflators" },
+    { id: 1, name: "OPTION 1" },
+    { id: 2, name: "OPTION 2" },
+    { id: 3, name: "OPTION 3" },
+    { id: 4, name: "OPTION 4 " },
+    { id: 5, name: "OPTION 5" },
+    { id: 6, name: "OPTION 6" },
+    { id: 7, name: "OPTION 7" },
   ];
 
   const [inputValue, setInputValue] = useState("");
@@ -32,13 +32,13 @@ function AddAssesment(props) {
     setShowDropdown(false);
   }
   const filteredOptions1 = [
-    { id: 1, name: "Speakers/ Basstubes" },
-    { id: 2, name: "Vacuum Cleaners" },
-    { id: 3, name: "Jack & wrench" },
-    { id: 4, name: "Car Cover " },
-    { id: 5, name: "Audio/Video Players" },
-    { id: 6, name: "Lightings" },
-    { id: 7, name: "Tyre Inflators" },
+    { id: 1, name: "OPTION 1" },
+    { id: 2, name: "OPTION 2" },
+    { id: 3, name: "OPTION 3" },
+    { id: 4, name: "OPTION 4 " },
+    { id: 5, name: "OPTION 5" },
+    { id: 6, name: "OPTION 6" },
+    { id: 7, name: "OPTION 7" },
   ];
 
   const [inputValue1, setInputValue1] = useState("");
@@ -70,9 +70,9 @@ function AddAssesment(props) {
   }
   console.log(skillSet);
   return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" dialogClassName={styles.main} centered>
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Create new assessment</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter" className={styles.assesment}>Create new assessment</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div>
@@ -154,6 +154,9 @@ function AddAssesment(props) {
           <div className={styles.name}>Duration of assessment</div>
           <div>
             <input className={styles.duration} placeholder="HH:MM:SS" onKeyDown={handleInputs} />
+          </div>
+          <div>
+            <button className={styles.save}>Save</button>
           </div>
         </div>
       </Modal.Body>

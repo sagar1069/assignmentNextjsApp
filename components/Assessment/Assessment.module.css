@@ -7,7 +7,6 @@
     border: 1px solid var(--system-stroke-2, #dadce0);
     flex-wrap: wrap;
     flex-direction: row;
-    width: 90%;
   }
   .align2 {
     display: flex;
@@ -70,7 +69,7 @@
   .firstDiv {
     padding: 16px 20px;
     width: 20%;
-    min-width: 200px;
+    min-width: 50px;
   }
   .value {
     color: var(--text-100, #1c4980);
@@ -105,7 +104,7 @@
     padding: 16px 20px;
     border-left: 1px solid var(--system-stroke-2, #dadce0);
     width: 30%;
-    min-width: 350px;
+    min-width: 300px;
   }
   .div3 {
     display: flex;
@@ -146,6 +145,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 16.8px */
+    
   }
   .div6 {
     display: flex;
@@ -185,7 +185,7 @@
   
     width: 30%;
     border-right: 1px solid var(--system-stroke-2, #dadce0);
-    min-width: 450px;
+    min-width: 400px;
   }
   .div9 {
     color: #1c4980;
@@ -198,7 +198,7 @@
   .div10 {
     padding: 16px 20px;
     width: 20%;
-    min-width: 150px;
+    min-width: 50px;
   }
   .totalPurpose {
     color: var(--text-100, #1c4980);
@@ -236,7 +236,6 @@
     width: 20%;
     color: var(--text-100, #1C4980);
     padding-top: 16px;
-    border-top: 1px solid var(--system-stroke-2, #DADCE0);;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -263,6 +262,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .bags{
     width: 50%;
@@ -273,6 +273,7 @@
   }
   .div16{
     display: flex;
+    border-top: 1px dotted var(--system-stroke-2, #DADCE0);
   }
   .lp{
     border-radius: 32.728px;
@@ -288,7 +289,7 @@
   color: #FFFFFF;
   }
   .width1{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -344,14 +345,28 @@
     line-height: 140%; /* 28px */
     padding: 5px;
   }
+  .div111{
+    display: none;
+  }
+  .width5{
+   display: none;
+  }
 }
 @media(max-width:700px){
+  .width5{
+    width: 80%;
+    padding-left: 20px;
+  }
+  .view{
+    display: none;
+  }
   .align {
     display: flex;
     border: 1px solid var(--system-stroke-2, #dadce0);
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    border-radius: 12px;
   }
   .align2 {
     display: flex;
@@ -413,8 +428,9 @@
   }
   .firstDiv {
     padding: 16px 20px;
-    width: 100%;
-    min-width: 200px;
+    width: 50%;
+    border: 1px solid var(--system-stroke-2, #DADCE0);
+    border-radius: 12px;
   }
   .value {
     color: var(--text-100, #1c4980);
@@ -446,9 +462,11 @@
     margin-bottom: 16px;
   }
   .div2 {
-    padding: 16px 20px;
+    padding: 10px;
     border-left: 1px solid var(--system-stroke-2, #dadce0);
     width: 100%;
+    border: 1px solid var(--system-stroke-2, #DADCE0);
+    border-radius: 12px;
   }
   .div3 {
     display: flex;
@@ -459,13 +477,14 @@
   .div5 {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid var(--system-stroke-2, #dadce0);
   }
   .price {
     color: var(--text-100, #1c4980);
   
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
@@ -494,11 +513,10 @@
     display: flex;
   }
   .div7 {
-    padding-left: 20px;
-    border-left: 1px solid var(--system-stroke-2, #dadce0);
+    padding-left: 10px;
     color: var(--text-100, #1c4980);
   
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 28px */
@@ -523,9 +541,10 @@
     line-height: 140%; /* 16.8px */
   }
   .div8 {
-    padding: 14px;
+    padding: 10px;
     border-left: 1px solid var(--system-stroke-2, #dadce0);
-  
+    border: 1px solid var(--system-stroke-2, #DADCE0);
+    border-radius: 12px;
     width: 100%;
     border-right: 1px solid var(--system-stroke-2, #dadce0);
   }
@@ -535,12 +554,24 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
-    margin-right: 26px;
+    padding-right: 10px;
+    border-right: 1px solid var(--system-stroke-2, #dadce0);
+    padding-left: 10px;
   }
-  .div10 {
+  .div11 {
     padding: 16px 20px;
-    width: 20%;
-    min-width: 150px;
+    width: 100%;
+    border: 1px solid var(--system-stroke-2, #DADCE0);
+    border-radius: 12px;
+  }
+  .div111 {
+    padding: 16px 20px;
+    width: 50%;
+    border: 1px solid var(--system-stroke-2, #DADCE0);
+    border-radius: 12px;
+  }
+  .div10{
+    display: none;
   }
   .totalPurpose {
     color: var(--text-100, #1c4980);
@@ -578,7 +609,6 @@
     width: 20%;
     color: var(--text-100, #1C4980);
     padding-top: 16px;
-    border-top: 1px solid var(--system-stroke-2, #DADCE0);;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -605,9 +635,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .bags{
-    width: 50%;
+    width: auto;
   }
   .dots{
     width: 20px;
@@ -615,6 +646,8 @@
   }
   .div16{
     display: flex;
+    
+    border-top: 1px dotted var(--system-stroke-2, #DADCE0);
   }
   .lp{
     border-radius: 32.728px;
@@ -630,7 +663,7 @@
   color: #FFFFFF;
   }
   .width1{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -652,7 +685,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 25.2px */
-  padding-top: 10px;
   }
   .div13{
     width: 100%;
@@ -667,7 +699,7 @@
   .dot{
     display: flex;
     justify-content: right;
-    width: 50%;
+    width: auto;
   }
   .Assessments{
     color: var(--text-100, #1C4980);
